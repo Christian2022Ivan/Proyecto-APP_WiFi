@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_app"
+        android:textAlignment="center"
+        android:textColor="@color/color_violet"
+        android:textSize="25sp"
+        android:textStyle="bold"
+     />
+
+    <EditText
+
+        android:id="@+id/etNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número 1"
+        android:inputType="numberDecimal|numberSigned"/>
+
+    <EditText
+
+        android:id="@+id/etNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número 2"
+        android:inputType="numberDecimal|numberSigned"/>
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="calcularsuma"
+        android:text="Calcular"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/color_red"
+        android:text=" " />
+
+
+</LinearLayout>
